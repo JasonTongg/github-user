@@ -49,8 +49,8 @@ export default function Index() {
   if (infoList) {
     return (
       <Container>
-        {infoList.map((item) => (
-          <Item>
+        {infoList.map((item, index) => (
+          <Item key={index}>
             <Icon className={item.color}>{item.icon}</Icon>
             <div className="text">
               <h2>{item.value}</h2>

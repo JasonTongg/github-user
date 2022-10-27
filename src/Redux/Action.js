@@ -1,4 +1,4 @@
-let url = 'https://api.github.com/users/wesbos';
+let url = 'https://api.github.com/users/maryantocinn';
 
 export const getUserList = (payload) => {
   return {
