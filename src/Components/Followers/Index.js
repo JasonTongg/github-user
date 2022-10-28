@@ -10,7 +10,9 @@ export default function Index() {
 
   let getData = useCallback(async () => {
     try {
-      let rawData = await window.fetch(userData.followers_url);
+      let rawData = await window.fetch(
+        userData.followers_url + '?per_page=100'
+      );
       let data = await rawData.json();
       setFollowers(data);
     } catch (error) {

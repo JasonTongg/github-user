@@ -5,6 +5,7 @@ import SearchBar from '../../Components/SearchBar';
 import Info from '../../Components/Info';
 import User from '../../Components/User';
 import Followers from '../../Components/Followers';
+import Chart from '../../Components/Chart';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <User></User>
           <Followers></Followers>
         </UserInfoContainer>
+        <Chart></Chart>
       </Content>
     </Container>
   );
