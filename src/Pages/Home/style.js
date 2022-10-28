@@ -9,3 +9,11 @@ export const Container = styled.div`
 export const Content = styled.div`
   padding: 6rem 12rem;
 `;
+
+export const UserInfoContainer = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  gap: 2rem;
+`;

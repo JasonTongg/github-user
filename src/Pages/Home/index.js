@@ -1,8 +1,10 @@
 import React from 'react';
-import {Container, Content} from './style';
+import {Container, Content, UserInfoContainer} from './style';
 import Navbar from '../../Components/Navbar';
 import SearchBar from '../../Components/SearchBar';
 import Info from '../../Components/Info';
+import User from '../../Components/User';
+import Followers from '../../Components/Followers';
 
 export default function Home() {
   return (
@@ -11,6 +13,10 @@ export default function Home() {
       <Content>
         <SearchBar />
         <Info />
+        <UserInfoContainer>
+          <User></User>
+          <Followers></Followers>
+        </UserInfoContainer>
       </Content>
     </Container>
   );
