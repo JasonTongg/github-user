@@ -25,7 +25,6 @@ const BarVertical = ({data}) => {
         return total;
       }, {});
 
-      console.log(filterData);
       const mostUsed = Object.values(filterData)
         .sort((a, b) => {
           return b.value - a.value;

@@ -1,20 +1,29 @@
 import React from 'react';
-import Profile from '../../Assets/TempProfile.jpg';
 import {Container} from './Style';
-import {useSelector} from 'react-redux';
-import {useEffect} from 'react';
+import {useAuth0} from '@auth0/auth0-react';
 
 export default function Index() {
-  let userData = useSelector((state) => state.items.list);
+  const {isAuthenticated, loginWithRedirect, logout, user, isLoading} =
+    useAuth0();
+  let isUser = isAuthenticated && user;
 
-  if (userData) {
+  if (!isLoading) {
     return (
       <Container>
-        <img src={userData.avatar_url} alt="Profile" />
-        <p>
-          Welcome, <span>{userData.login}</span>
-        </p>
-        <button>Logout</button>
+        {isUser && user.picture && <img src={user.picture} alt={user.name} />}
+        {isUser && user.picture && (
+          <p>
+            Welcome, <span>{user.name}</span>
+          </p>
+        )}
+
+        {isUser && user.picture ? (
+          <button onClick={() => logout({returnTo: window.location.origin})}>
+            Logout
+          </button>
+        ) : (
+          <button onClick={loginWithRedirect}>Login</button>
+        )}
       </Container>
     );
   } else {
