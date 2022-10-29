@@ -50,7 +50,7 @@ const BarHorizontal = ({data}) => {
     dataFormat: 'json',
     dataSource: {
       chart: {
-        caption: 'Language',
+        caption: 'Forks per Project',
         yAxisNameFontSize: 16,
         xAxisNameFontSize: 16,
         showCanvasBorder: 0,

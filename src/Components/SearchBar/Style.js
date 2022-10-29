@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: minmax(300px, 3fr) minmax(300px, 1fr);
   width: 100%;
   gap: 1rem;
 
+  @media only screen and (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
   form {
     display: grid;
     grid-template-columns: 20px auto 90px;
