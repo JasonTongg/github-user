@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar';
 import SearchBar from '../../Components/SearchBar';
 import Info from '../../Components/Info';
 import User from '../../Components/User';
-import Followers from '../../Components/Followers';
+// import Followers from '../../Components/Followers';
 import Chart from '../../Components/Chart';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <Info />
         <UserInfoContainer>
           <User></User>
-          <Followers></Followers>
+          {/* <Followers></Followers> */}
         </UserInfoContainer>
         <Chart></Chart>
       </Content>
