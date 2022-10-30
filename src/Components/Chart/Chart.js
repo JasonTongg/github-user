@@ -3,7 +3,7 @@ import {Container, ChartContainer} from './Style';
 import BarHorizontal from './BarHorizontal/BarHorizontal';
 import BarVertical from './BarVertical/BarVertical';
 import Doughnut from './Doughnut/BarHorizontal';
-import Pie from './Chart';
+import Pie from './Pie/Pie';
 
 export default function Chart() {
   return (
