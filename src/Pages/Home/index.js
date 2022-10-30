@@ -3,7 +3,7 @@ import {Container, Content, UserInfoContainer} from './style';
 import Navbar from '../../Components/Navbar/index.js';
 import SearchBar from '../../Components/SearchBar/index.js';
 import Info from '../../Components/Info/index.js';
-import User from '../../Components/User/index';
+import User from '../../Components/User/index.js';
 import Followers from '../../Components/Followers/index.js';
 import Chart from '../../Components/Chart/index.js';
 
