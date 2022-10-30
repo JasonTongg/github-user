@@ -9,7 +9,7 @@ import {useCallback} from 'react';
 
 ReactFC.fcRoot(FusionCharts, Chart);
 
-const BarHorizontal = ({data}) => {
+const Pie = ({data}) => {
   let userData = useSelector((state) => state.items.list);
   let [repos, setRepos] = useState({});
 
@@ -91,4 +91,4 @@ const BarHorizontal = ({data}) => {
   }
 };
 
-export default BarHorizontal;
+export default Pie;

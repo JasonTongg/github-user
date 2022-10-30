@@ -6,7 +6,7 @@ import {getUserList} from '../../Redux/Action';
 import {useDispatch} from 'react-redux';
 import {useEffect} from 'react';
 
-export default function Index() {
+export default function SearchBar() {
   let searchValue = useRef();
   let dispatch = useDispatch();
   let [limit, setLimit] = useState(60);

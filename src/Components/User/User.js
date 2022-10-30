@@ -5,7 +5,7 @@ import {BiBuildings} from 'react-icons/bi';
 import {HiLocationMarker} from 'react-icons/hi';
 import {BsLink} from 'react-icons/bs';
 
-export default function Index() {
+export default function User() {
   let userData = useSelector((state) => state.items.list);
 
   if (userData) {

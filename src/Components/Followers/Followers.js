@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux';
 import {useEffect} from 'react';
 import {useCallback} from 'react';
 
-export default function Index() {
+export default function Followers() {
   let userData = useSelector((state) => state.items.list);
   let [followers, setFollowers] = useState();
 

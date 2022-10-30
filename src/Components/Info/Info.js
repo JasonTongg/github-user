@@ -6,7 +6,7 @@ import {BsPeople, BsPersonPlus, BsCodeSquare} from 'react-icons/bs';
 import {useEffect} from 'react';
 import useState from 'react-usestateref';
 
-export default function Index() {
+export default function Info() {
   let getList = useSelector((state) => state.items.list);
   let [, setUser, userRef] = useState(getList);
   let [infoList, setInfoList] = useState([]);

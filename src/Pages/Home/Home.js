@@ -1,11 +1,11 @@
 import React from 'react';
 import {Container, Content, UserInfoContainer} from './style';
-import Navbar from '../../Components/Navbar/index.js';
-import SearchBar from '../../Components/SearchBar/index.js';
-import Info from '../../Components/Info/index.js';
-import User from '../../Components/User/index.js';
-import Followers from '../../Components/Followers/index.js';
-import Chart from '../../Components/Chart/index.js';
+import Navbar from '../../Components/Navbar/Navbar.js';
+import SearchBar from '../../Components/SearchBar/SearchBar.js';
+import Info from '../../Components/Info/Info.js';
+import User from '../../Components/User/User.js';
+import Followers from '../../Components/Followers/Followers.js';
+import Chart from '../../Components/Chart/Chart.js';
 
 export default function Home() {
   return (
