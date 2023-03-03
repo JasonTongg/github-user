@@ -30,4 +30,8 @@ export const UserInfoContainer = styled.div`
   align-items: center;
   gap: 2rem;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 `;

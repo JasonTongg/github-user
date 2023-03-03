@@ -6,20 +6,21 @@ export const Container = styled.div`
   height: 278px;
   overflow-y: scroll;
   position: relative;
-  width: calc(100vw - 24rem);
+  width: 100%;
+  // width: calc(100vw - 24rem);
 
-  @media only screen and (max-width: 1000px) {
-    width: calc(100vw - 16rem);
-  }
-  @media only screen and (max-width: 720px) {
-    width: calc(100vw - 12rem);
-  }
-  @media only screen and (max-width: 600px) {
-    width: calc(100vw - 8rem);
-  }
-  @media only screen and (max-width: 480px) {
-    width: calc(100vw - 4rem);
-  }
+  // @media only screen and (max-width: 1000px) {
+  //   width: calc(100vw - 16rem);
+  // }
+  // @media only screen and (max-width: 720px) {
+  //   width: calc(100vw - 12rem);
+  // }
+  // @media only screen and (max-width: 600px) {
+  //   width: calc(100vw - 8rem);
+  // }
+  // @media only screen and (max-width: 480px) {
+  //   width: calc(100vw - 4rem);
+  // }
 
   & > *:not(:last-child) {
     margin-bottom: 1rem;
