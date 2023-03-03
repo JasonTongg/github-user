@@ -15,4 +15,8 @@ export const ChartContainer = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   width: 100%;
+
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 100%;
+  }
 `;

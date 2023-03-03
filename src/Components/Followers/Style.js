@@ -1,12 +1,25 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
   background-color: white;
   padding: 4rem 3rem 1rem 3rem;
   height: 278px;
   overflow-y: scroll;
   position: relative;
+  width: calc(100vw - 24rem);
+
+  @media only screen and (max-width: 1000px) {
+    width: calc(100vw - 16rem);
+  }
+  @media only screen and (max-width: 720px) {
+    width: calc(100vw - 12rem);
+  }
+  @media only screen and (max-width: 600px) {
+    width: calc(100vw - 8rem);
+  }
+  @media only screen and (max-width: 480px) {
+    width: calc(100vw - 4rem);
+  }
 
   & > *:not(:last-child) {
     margin-bottom: 1rem;
@@ -33,6 +46,13 @@ export const Item = styled.div`
   align-items: center;
   gap: 1rem;
 
+  @media only screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    justify-content: center;
+    justify-items: center;
+  }
+
   img {
     width: 60px;
     height: 60px;
@@ -41,6 +61,11 @@ export const Item = styled.div`
   }
 
   div {
+    @media only screen and (max-width: 450px) {
+      text-align: center;
+      width: calc(100vw - 4rem);
+      word-wrap: break-word;
+    }
     p {
       font-weight: bold;
       font-size: 1rem;

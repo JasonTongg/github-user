@@ -12,17 +12,26 @@ export const Container = styled.div`
   }
   form {
     display: grid;
-    grid-template-columns: 20px auto 90px;
+    grid-template-columns: 20px 1fr 90px;
     background-color: white;
     align-items: center;
     padding: 0.5rem 1rem;
     gap: 1rem;
+
+    @media only screen and (max-width: 400px) {
+      grid-template-columns: 20px 1fr;
+    }
 
     input {
       border: none;
       background: transparent;
       outline: none;
       font-size: 1.3rem;
+      width: 100%;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 1rem;
+      }
     }
 
     svg {
@@ -39,6 +48,10 @@ export const Container = styled.div`
       border: none;
       font-size: 1.1rem;
       border-radius: 7px;
+
+      @media only screen and (max-width: 400px) {
+        display: none;
+      }
     }
   }
 
